@@ -13,6 +13,8 @@ const loadChars = document.getElementById("load-chars")
 loadChars.addEventListener("click", loadCharacters)
 const close = document.getElementById("close-button")
 close.addEventListener("click", closePopUp)
+const addSJ = document.getElementById('character-job-input')
+addSJ.addEventListener("input", presentSjOptions)
 
 function hamburgerMenu() {
   document.getElementById("hamburgerMenu").classList.toggle("show");
@@ -317,32 +319,32 @@ function addNewCharacter()
 
   function saveCharacters()
   {
-// Convert the characters array to a JSON string
-const jsonData = JSON.stringify(characters, null, 2);
+    // Convert the characters array to a JSON string
+    const jsonData = JSON.stringify(characters, null, 2);
 
-// Create a Blob object representing the JSON data
-const blob = new Blob([jsonData], { type: 'application/json' });
+    // Create a Blob object representing the JSON data
+    const blob = new Blob([jsonData], { type: 'application/json' });
 
-// Create a temporary URL for the Blob
-const url = URL.createObjectURL(blob);
+    // Create a temporary URL for the Blob
+    const url = URL.createObjectURL(blob);
 
-// Create a hidden anchor element to trigger the download
-const a = document.createElement('a');
-a.href = url;
+    // Create a hidden anchor element to trigger the download
+    const a = document.createElement('a');
+    a.href = url;
 
-// Prompt the user for the desired filename and download location
-const filename = prompt("Enter the desired filename (without extension):");
+    // Prompt the user for the desired filename and download location
+    const filename = prompt("Enter the desired filename (without extension):");
 
-if (filename) {
-    a.download = filename + ".json";
-}
-
-
-a.click();
+    if (filename) {
+        a.download = filename + ".json";
+    }
 
 
-// Revoke the URL to release memory
-URL.revokeObjectURL(url);
+    a.click();
+
+
+    // Revoke the URL to release memory
+    URL.revokeObjectURL(url);
   }
 
   function loadCharacters()
@@ -362,4 +364,208 @@ URL.revokeObjectURL(url);
         reader.readAsText(file);
     };
     input.click();
+  }
+
+  function presentSjOptions() 
+  {
+    let sj = document.getElementById('character-subjob-input')
+    let sjDatalist = document.createElement('datalist')
+    let job = document.getElementById('character-job-input').value
+    switch (job) {
+      case 'Artificer':
+        sjDatalist.setAttribute('id', 'ArtificerList')
+        sjDatalist.innerHTML = `
+        <option>Alchemist</option>
+        <option>Armorer</option>
+        <option>Artillerist</option>
+        <option>Battle Smith</option>
+        `
+        sj.setAttribute('list', 'ArtificerList')
+        break;
+      case 'Barbarian':
+        sjDatalist.setAttribute('id', 'BarbarianList')
+        sjDatalist.innerHTML = `
+        <option>Path of the Ancestral Guardian</option>
+        <option>Path of the Beast</option>
+        <option>Path of the Berserker</option>
+        <option>Path of the Giant</option>
+        <option>Path of the Storm Herald</option>
+        <option>Path of the Totem Warrior</option>
+        <option>Path of the Zealot</option>
+        <option>Path of the Wild Magic</option>
+        `
+        sj.setAttribute('list', 'BarbarianList')
+        break;
+      case 'Bard':
+        sjDatalist.setAttribute('id', 'BardList')
+        sjDatalist.innerHTML = `
+        <option>College of Creation</option>
+        <option>College of Eloquence</option>
+        <option>College of Glamour</option>
+        <option>College of Lore</option>
+        <option>College of Spirits</option>
+        <option>College of Swords</option>
+        <option>College of Valor</option>
+        <option>College of Whispers</option>
+        `
+        sj.setAttribute('list', 'BardList')
+        break;
+      case 'Cleric':
+        sjDatalist.setAttribute('id', 'ClericList')
+        sjDatalist.innerHTML = `
+        <option>Arcana Domain</option>
+        <option>Forge Domain</option>
+        <option>Grave Domain</option>
+        <option>Knowledge Domain</option>
+        <option>Life Domain</option>
+        <option>Light Domain</option>
+        <option>Order Domain</option>
+        <option>Peace Domain</option>
+        <option>Tempest Domain</option>
+        <option>Trickery Domain</option>
+        <option>Twilight Domain</option>
+        <option>War Domain</option>
+        `
+        sj.setAttribute('list', 'ClericList')
+        break;
+      case 'Druid':
+        sjDatalist.setAttribute('id', 'DruidList')
+        sjDatalist.innerHTML = `
+        <option>Circle of Dreams</option>
+        <option>Circle of Spores</option>
+        <option>Circle of Stars</option>
+        <option>Circle of Wildfire</option>
+        <option>Circle of the Land</option>
+        <option>Circle of the Moon</option>
+        <option>Circle of the Shepherd</option>
+        `
+        sj.setAttribute('list', 'DruidList')
+        break;
+      case 'Fighter':
+        sjDatalist.setAttribute('id', 'FighterList')
+        sjDatalist.innerHTML = `
+        <option>Arcane Archer</option>
+        <option>Battle Master</option>
+        <option>Cavalier</option>
+        <option>Champion</option>
+        <option>Echo Knight</option>
+        <option>Eldritch Knight</option>
+        <option>Psi Warrior</option>
+        <option>Purple Dragon Knight</option>
+        <option>Rune Knight</option>
+        <option>Samurai</option>
+        `
+        sj.setAttribute('list', 'FighterList')
+        break;
+      case 'Monk':
+        sjDatalist.setAttribute('id', 'MonkList')
+        sjDatalist.innerHTML = `
+        <option>Way of Mercy</option>
+        <option>Way of Shadow</option>
+        <option>Way of the Ascendant Dragon</option>
+        <option>Way of the Astral Self</option>
+        <option>Way of the Drunken Master</option>
+        <option>Way of the Four Elements</option>
+        <option>Way of the Kensei</option>
+        <option>Way of the Long Death</option>
+        <option>Way of the Open Hand</option>
+        <option>Way of the Sun Soul</option>
+        `
+        sj.setAttribute('list', 'MonkList')
+        break;
+      case 'Paladin':
+        sjDatalist.setAttribute('id', 'PaladinList')
+        sjDatalist.innerHTML = `
+        <option>Oath of Conquest</option>
+        <option>Oath of Devotion</option>
+        <option>Oath of Glory</option>
+        <option>Oath of Redemption</option>
+        <option>Oath of the Ancients</option>
+        <option>Oath of the Crown</option>
+        <option>Oath of the Watchers</option>
+        <option>Oath of Vengence</option>
+        <option>Oathbreaker</option>
+        `
+        sj.setAttribute('list', 'PaladinList')
+        break;
+      case 'Ranger':
+        sjDatalist.setAttribute('id', 'RangerList')
+        sjDatalist.innerHTML = `
+        <option>Beast Master</option>
+        <option>Drakewarden</option>
+        <option>Fey Wanderer</option>
+        <option>Gloom Stalker</option>
+        <option>Horizon Walker</option>
+        <option>Hunter Ranger</option>
+        <option>Monster Slayer</option>
+        <option>Swarmkeeper</option>
+        `
+        sj.setAttribute('list', 'RangerList')
+        break;
+      case 'Rogue':
+        sjDatalist.setAttribute('id', 'RogueList')
+        sjDatalist.innerHTML = `
+        <option>Arcane Trickster</option>
+        <option>Assassin</option>
+        <option>Inquisitive</option>
+        <option>Mastermind</option>
+        <option>Phantom</option>
+        <option>Scout</option>
+        <option>Soulknife</option>
+        <option>Swashbuckler</option>
+        <option>Thief</option>
+        `
+        sj.setAttribute('list', 'RogueList')
+        break;
+      case 'Sorcerer':
+        sjDatalist.setAttribute('id', 'SorcererList')
+        sjDatalist.innerHTML = `
+        <option>Aberrant Mind</option>
+        <option>Clockwork Soul</option>
+        <option>Divine Soul</option>
+        <option>Draconic Blodline</option>
+        <option>Lunar Sorcery</option>
+        <option>Shadow Magic</option>
+        <option>Storm Sorcery</option>
+        <option>Wild Magic</option>
+        `
+        sj.setAttribute('list', 'SorcererList')
+        break;
+      case 'Warlock':
+        sjDatalist.setAttribute('id', 'WarlockList')
+        sjDatalist.innerHTML = `
+        <option>Archfey</option>
+        <option>Celestial</option>
+        <option>Fathomless</option>
+        <option>Fiend</option>
+        <option>Genie</option>
+        <option>Great Old One</option>
+        <option>Hexblade</option>
+        <option>Undead</option>
+        <option>Undying</option>
+        `
+        sj.setAttribute('list', 'WarlockList')
+        break;
+      case 'Wizard':
+        sjDatalist.setAttribute('id', 'WizardList')
+        sjDatalist.innerHTML = `
+        <option>Bladesinging</option>
+        <option>Chronurgy Magic</option>
+        <option>Graviturgy Magic</option>
+        <option>Order of Scribes</option>
+        <option>School of Abjuration</option>
+        <option>School of Divination</option>
+        <option>School of Enchantment</option>
+        <option>School of Evocation</option>
+        <option>School of Illusion</option>
+        <option>School of Necromancy</option>
+        <option>School of Transmutation</option>
+        <option>War Magic</option>
+        `
+        sj.setAttribute('list', 'WizardList')
+        break;
+      default:
+        break;
+    }
+    sj.appendChild(sjDatalist);
   }
