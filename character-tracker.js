@@ -15,6 +15,8 @@ const close = document.getElementById("close-button")
 close.addEventListener("click", closePopUp)
 const addSJ = document.getElementById('character-job-input')
 addSJ.addEventListener("input", presentSjOptions)
+const addSS = document.getElementById('character-species-input')
+addSS.addEventListener("input", presentSsOptions)
 
 function hamburgerMenu() {
   document.getElementById("hamburgerMenu").classList.toggle("show");
@@ -489,8 +491,159 @@ function addNewCharacter()
         sj.setAttribute('list', 'PaladinList')
         break;
       case 'Ranger':
-        sjDatalist.setAttribute('id', 'RangerList')
+        sjDatalist.setAttribute('id', 'HumanList')
         sjDatalist.innerHTML = `
+        <option>Base Human</option>
+        <option>Varient Human</option>
+        `
+        sj.setAttribute('list', 'HumanList')
+        break;
+      case 'Shifter':
+        sjDatalist.setAttribute('id', 'ShifterList')
+        sjDatalist.innerHTML = `
+        <option>Beasthide Shifter</option>
+        <option>Longtooth Shifter</option>
+        <option>Swiftstride Shifter</option>
+        <option>Wildhunt Shifter</option>
+        `
+        sj.setAttribute('list', 'ShifterList')
+        break;
+      case 'Tiefling':
+        sjDatalist.setAttribute('id', 'TieflingList')
+        sjDatalist.innerHTML = `
+        <option>Asmodeus Tiefling</option>
+        <option>Baalzebul Tiefling</option>
+        <option>Devil's Tongue Tiefling</option>
+        <option>Dispater Tiefling</option>
+        <option>Feral Tiefling</option>
+        <option>Fierna Tiefling</option>
+        <option>Glasya Tiefling</option>
+        <option>Levistus Tiefling</option>
+        <option>Mammon Tiefling</option>
+        <option>Mephistopheles Tiefling</option>
+        <option>Winged Tiefling</option>
+        <option>Zariel Tiefling</option>
+        `
+        sj.setAttribute('list', 'TieflingList')
+        break;
+      default:
+        break;
+    }
+    sj.appendChild(sjDatalist);
+  }
+
+  function presentSsOptions() 
+  {
+    let ss = document.getElementById('character-subspecies-input')
+    let ssDatalist = document.createElement('datalist')
+    let species = document.getElementById('character-species-input').value
+    switch (species) {
+      case 'Aasimar':
+        ssDatalist.setAttribute('id', 'AasimarList')
+        ssDatalist.innerHTML = `
+        <option>Fallen Aasimar</option>
+        <option>Protector Aasimar</option>
+        <option>Scourge Aasimar</option>
+        <option>Variant Aasimar</option>
+        `
+        ss.setAttribute('list', 'AasimarList')
+        break;
+      case 'Dragonborn':
+        ssDatalist.setAttribute('id', 'DragonbornList')
+        ssDatalist.innerHTML = `
+        <option>Black (Acid)</option>
+        <option>Blue (Lightning)</option>
+        <option>Green (Poison)</option>
+        <option>Red (Fire)</option>
+        <option>White (Cold)</option>
+        <option>Amethyst (Force)</option>
+        <option>Crystal (Radiant)</option>
+        <option>Emerald (Psychic)</option>
+        <option>Sapphire (Thunder)</option>
+        <option>Topaz (Necrotic)</option>
+        <option>Brass (Fire)</option>
+        <option>Bronze (Lightning)</option>
+        <option>Copper (Acid)</option>
+        <option>Gold (Fire)</option>
+        <option>Silver (Cold)</option>
+        <option>Draconblood</option>
+        <option>Ravenite</option>
+        `
+        ss.setAttribute('list', 'DragonbornList')
+        break;
+      case 'Dwarf':
+        ssDatalist.setAttribute('id', 'DwarfList')
+        ssDatalist.innerHTML = `
+        <option>Hill Dwarf</option>
+        <option>Mountian Dwarf</option>
+        `
+        ss.setAttribute('list', 'DwarfList')
+        break;
+      case 'Elf':
+        ssDatalist.setAttribute('id', 'ElfList')
+        ssDatalist.innerHTML = `
+        <option>Astral Elf</option>
+        <option>Drow</option>
+        <option>Eladrin</option>
+        <option>High Elf</option>
+        <option>Pallid Elf</option>
+        <option>Sea Elf</option>
+        <option>Shadar-Kai</option>
+        <option>Wood Elf</option>
+        `
+        ss.setAttribute('list', 'ElfList')
+        break;
+      case 'Genasi':
+        ssDatalist.setAttribute('id', 'GenasiList')
+        ssDatalist.innerHTML = `
+        <option>Air Genasi</option>
+        <option>Earth Genasi</option>
+        <option>Fire Genasi</option>
+        <option>Water Genasi</option>
+        `
+        ss.setAttribute('list', 'GenasiList')
+        break;
+      case 'Gith':
+        ssDatalist.setAttribute('id', 'GithList')
+        ssDatalist.innerHTML = `
+        <option>Githyanki</option>
+        <option>Githzerai</option>
+        `
+        ss.setAttribute('list', 'GithList')
+        break;
+      case 'Gnome':
+        ssDatalist.setAttribute('id', 'GnomeList')
+        ssDatalist.innerHTML = `
+        <option>Deep Gnome</option>
+        <option>Forest Gnome</option>
+        <option>Rock Gnome</option>
+        `
+        ss.setAttribute('list', 'GnomeList')
+        break;
+      case 'Half-Elf':
+        ssDatalist.setAttribute('id', 'Half-ElfList')
+        ssDatalist.innerHTML = `
+        <option>Base Half-Elf</option>
+        <option>Half-Drow</option>
+        <option>Half-High Elf</option>
+        <option>Half-Sea Elf</option>
+        <option>Half-Wood Elf</option>
+        `
+        ss.setAttribute('list', 'Half-ElfList')
+        break;
+      case 'Halfling':
+        ssDatalist.setAttribute('id', 'HalflingList')
+        ssDatalist.innerHTML = `
+        <option>Ghostwise Halfling</option>
+        <option>Lightfoot Halfling</option>
+        <option>Lotusden Halfling</option>
+        <option>Stout Halfling</option>
+        `
+        ss.setAttribute('list', 'HalflingList')
+        break;
+      case 'Human':
+        ssDatalist.setAttribute('id', 'RangerList')
+        ssDatalist.innerHTML = `
         <option>Beast Master</option>
         <option>Drakewarden</option>
         <option>Fey Wanderer</option>
@@ -500,11 +653,11 @@ function addNewCharacter()
         <option>Monster Slayer</option>
         <option>Swarmkeeper</option>
         `
-        sj.setAttribute('list', 'RangerList')
+        ss.setAttribute('list', 'RangerList')
         break;
       case 'Rogue':
-        sjDatalist.setAttribute('id', 'RogueList')
-        sjDatalist.innerHTML = `
+        ssDatalist.setAttribute('id', 'RogueList')
+        ssDatalist.innerHTML = `
         <option>Arcane Trickster</option>
         <option>Assassin</option>
         <option>Inquisitive</option>
@@ -515,11 +668,11 @@ function addNewCharacter()
         <option>Swashbuckler</option>
         <option>Thief</option>
         `
-        sj.setAttribute('list', 'RogueList')
+        ss.setAttribute('list', 'RogueList')
         break;
       case 'Sorcerer':
-        sjDatalist.setAttribute('id', 'SorcererList')
-        sjDatalist.innerHTML = `
+        ssDatalist.setAttribute('id', 'SorcererList')
+        ssDatalist.innerHTML = `
         <option>Aberrant Mind</option>
         <option>Clockwork Soul</option>
         <option>Divine Soul</option>
@@ -529,11 +682,11 @@ function addNewCharacter()
         <option>Storm Sorcery</option>
         <option>Wild Magic</option>
         `
-        sj.setAttribute('list', 'SorcererList')
+        ss.setAttribute('list', 'SorcererList')
         break;
       case 'Warlock':
-        sjDatalist.setAttribute('id', 'WarlockList')
-        sjDatalist.innerHTML = `
+        ssDatalist.setAttribute('id', 'WarlockList')
+        ssDatalist.innerHTML = `
         <option>Archfey</option>
         <option>Celestial</option>
         <option>Fathomless</option>
@@ -544,11 +697,11 @@ function addNewCharacter()
         <option>Undead</option>
         <option>Undying</option>
         `
-        sj.setAttribute('list', 'WarlockList')
+        ss.setAttribute('list', 'WarlockList')
         break;
       case 'Wizard':
-        sjDatalist.setAttribute('id', 'WizardList')
-        sjDatalist.innerHTML = `
+        ssDatalist.setAttribute('id', 'WizardList')
+        ssDatalist.innerHTML = `
         <option>Bladesinging</option>
         <option>Chronurgy Magic</option>
         <option>Graviturgy Magic</option>
@@ -562,10 +715,10 @@ function addNewCharacter()
         <option>School of Transmutation</option>
         <option>War Magic</option>
         `
-        sj.setAttribute('list', 'WizardList')
+        ss.setAttribute('list', 'WizardList')
         break;
       default:
         break;
     }
-    sj.appendChild(sjDatalist);
+    ss.appendChild(ssDatalist);
   }
