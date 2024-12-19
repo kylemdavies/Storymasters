@@ -457,6 +457,9 @@ const backgrounds = [
             `Every avalanche begins as a single pebble.`,
             `The world always feels too big, and I'm afraid I'll never find my place in it.`,
         ],
+        ideals: [],
+        bonds: [],
+        flaws: []
     },
     {
         name: 'Gladiator',
@@ -600,7 +603,7 @@ const backgrounds = [
         flaws: [
             `I have certain rituals that I must follow every day. I can never break them.`,
             `I assume the worst in people.`,
-            `I feel no compassion for the dead. They’re the lucky ones.`,
+            `I feel no compassion for the dead. They're the lucky ones.`,
             `I have an addiction.`,
             `I am a purveyor of doom and gloom who lives in a world without hope.`,
             `I talk to spirits that no one else can see.`,
@@ -867,23 +870,29 @@ const backgrounds = [
         name: 'Rewarded',
         personalities: [
             `A safe home is a foundation on which anything else can be built. (Key, Throne)`,
-            `I was elevated to heights I could never otherwise attain, and I won’t waste my fortune. (Star, Sun)`,
+            `I was elevated to heights I could never otherwise attain, and I won't waste my fortune. (Star, Sun)`,
             `I try to be a source of inspiration and joy to others. Life is never as bad as you think! (Euryale, Jester)`,
             `Courage and boldness can carry the day when all else fails. (Comet, Knight)`,
             `My good fortune means I can lift others up as well. (Gem, Moon)`,
             `Having the right answers is the first step to solving any problem, no matter how dire. (Fates, Sage)`,
         ],
+        ideals: [],
+        bonds: [],
+        flaws: []
     },
     {
         name: 'Ruined',
         personalities: [
-            `I’ve changed from my past, and I work to live up to my new path. (Balance, Throne)`,
+            `I've changed from my past, and I work to live up to my new path. (Balance, Throne)`,
             `Every moment is a gift I refuse to squander. (Euryale, Skull)`,
-            `Now that I’ve overcome having nothing, I can survive anything. (Fool, Ruin, Talons)`,
+            `Now that I've overcome having nothing, I can survive anything. (Fool, Ruin, Talons)`,
             `I know enemies are set against me, and I always prepare for the worst. (Flames, Rogue)`,
-            `I interpret every event as part of a larger pattern I just haven’t worked out yet. (Puzzle, Star)`,
-            `I must make up for so much time I’ve already lost. (Donjon, Void)`,
+            `I interpret every event as part of a larger pattern I just haven't worked out yet. (Puzzle, Star)`,
+            `I must make up for so much time I've already lost. (Donjon, Void)`,
         ],
+        ideals: [],
+        bonds: [],
+        flaws: []
     },
     {
         name: 'Rune Carver',
@@ -895,6 +904,9 @@ const backgrounds = [
             `Life may be a whirlwind of chaos around me, but whenever I create my runes, I feel at peace.`,
             `My brain struggles to process ink words written on paper, but the tactile feeling of carved runes makes my mind sing.`,
         ],
+        ideals: [],
+        bonds: [],
+        flaws: []
     },
     {
         name: 'Sage',
@@ -1198,7 +1210,89 @@ const backgrounds = [
             `I'm always changing my mind-well, almost always.`,
         ]
     },
-  
+    {
+        name: "City Watch",
+        personalities: [],
+        ideals: [],
+        bonds: [],
+        flaws: [],
+    },
+    {
+        name: "Clan Crafter",
+        personalities: [],
+        ideals: [],
+        bonds: [],
+        flaws: [],
+    },
+    {
+        name: "Cloistered Scholar",
+        personalities: [],
+        ideals: [],
+        bonds: [],
+        flaws: [],
+    },
+    {
+        name: "Courtier",
+        personalities: [],
+        ideals: [],
+        bonds: [],
+        flaws: [],
+    },
+    {
+        name: "Faction Agent",
+        personalities: [],
+        ideals: [],
+        bonds: [],
+        flaws: [],
+    },
+    {
+        name: "Inheritor",
+        personalities: [],
+        ideals: [],
+        bonds: [],
+        flaws: [],
+    },
+    {
+        name: "Investigator",
+        personalities: [],
+        ideals: [],
+        bonds: [],
+        flaws: [],
+    },
+    {
+        name: "Knight of the Order",
+        personalities: [],
+        ideals: [],
+        bonds: [],
+        flaws: [],
+    },
+    {
+        name: "Mercenary Veteran",
+        personalities: [],
+        ideals: [],
+        bonds: [],
+        flaws: [],
+    },
+    {
+        name: "Urban Bounty Hunter",
+        personalities: [],
+        ideals: [],
+        bonds: [],
+        flaws: [],
+    },
+    {
+        name: "Uthgardt Tribe Member",
+        personalities: [],
+        ideals: [],
+        bonds: [],
+        flaws: [],
+    },
+    {
+        name: "Waterdhavian Noble",
+        personalities: [],
+        ideals: [],
+        bonds: [],
+        flaws: [],
+    },
 ]
-
 export default backgrounds

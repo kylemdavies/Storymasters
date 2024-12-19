@@ -44,6 +44,33 @@ window.onclick = function(event) {
 
 function divPopUp() {
   document.getElementById("character-popup").style.display = "block";
+  let spInput = document.getElementById("character-species-input")
+  let spDatalist = document.createElement('datalist')
+  spDatalist.setAttribute('id', 'species')
+  species.forEach(race => {
+    let option = document.createElement('option');
+    option.textContent = race.name;
+    spDatalist.appendChild(option);
+  });
+  spInput.appendChild(spDatalist)
+  let clInput = document.getElementById("character-job-input")
+  let clDatalist = document.createElement('datalist')
+  clDatalist.setAttribute('id', 'jobs')
+  jobs.forEach(job => {
+    let option = document.createElement('option');
+    option.textContent = job.name;
+    clDatalist.appendChild(option);
+  });
+  clInput.appendChild(clDatalist)
+  let bkgInput = document.getElementById("character-background-input")
+  let bkgDatalist = document.createElement('datalist')
+  bkgDatalist.setAttribute('id', 'backgounds')
+  backgrounds.forEach(background => {
+    let option = document.createElement('option');
+    option.textContent = background.name;
+    bkgDatalist.appendChild(option);
+  });
+  bkgInput.appendChild(bkgDatalist)
 }
 
 // Function to close the pop-up using the close button
