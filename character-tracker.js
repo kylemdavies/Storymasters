@@ -1544,352 +1544,614 @@ function addNewCharacter()
       case 'Knight':
       personalityDatalist.setAttribute('id', 'KnightPList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the world.</option>
+        <option>The common folk love me for my kindness and generosity.</option>
+        <option>No one could doubt by looking at my regal bearing that I am a cut above the unwashed masses.</option>
+        <option>I take great pains to always look my best and follow the latest fashions.</option>
+        <option>I don't like to get my hands dirty, and I won't be caught dead in unsuitable accommodations.</option>
+        <option>Despite my noble birth, I do not place myself above other folk. We all have the same blood.</option>
+        <option>My favor, once lost, is lost forever.</option>
+        <option>If you do me an injury, I will crush you, ruin your name, and salt your fields.</option>
         `
         personality.setAttribute('list', 'KnightPList')
       idealsDatalist.setAttribute('id', 'KnightIList')
         idealsDatalist.innerHTML = `
-        <option></option>
+        <option>Respect. Respect is due to me because of my position, but all people regardless of station deserve to be treated with dignity. (Good)</option>
+        <option>Responsibility. It is my duty to respect the authority of those above me, just as those below me must respect mine. (Lawful)</option>
+        <option>Independence. I must prove that I can handle myself without the coddling of my family. (Chaotic)</option>
+        <option>Power. If I can attain more power, no one will tell me what to do. (Evil)</option>
+        <option>Family. Blood runs thicker than water. (Any)</option>
+        <option>Noble Obligation. It is my duty to protect and care for the people beneath me. (Good)</option>
         `
         ideals.setAttribute('list', 'KnightIList')
       bondsDatalist.setAttribute('id', 'KnightBList')
         bondsDatalist.innerHTML = `
-        <option></option>
+        <option>I will face any challenge to win the approval of my family.</option>
+        <option>My house's alliance with another noble family must be sustained at all costs.</option>
+        <option>Nothing is more important than the other members of my family.</option>
+        <option>I am in love with the heir of a family that my family despises.</option>
+        <option>My loyalty to my sovereign is unwavering.</option>
+        <option>The common folk must see me as a hero of the people.</option>
         `
         bonds.setAttribute('list', 'KnightBList')
       flawsDatalist.setAttribute('id', 'KnightFList')
         flawsDatalist.innerHTML = `
-        <option></option>
+        <option>I secretly believe that everyone is beneath me.</option>
+        <option>I hide a truly scandalous secret that could ruin my family forever.</option>
+        <option>I too often hear veiled insults and threats in every word addressed to me, and I'm quick to anger.</option>
+        <option>I have an insatiable desire for carnal pleasures.</option>
+        <option>In fact, the world does revolve around me.</option>
+        <option>By my words and actions, I often bring shame to my family.</option>
         `
         flaws.setAttribute('list', 'KnightFList')
         break;
       case 'Marine':
       personalityDatalist.setAttribute('id', 'MarinePList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>I speak rarely but mean every word I say.</option>
+        <option>I laugh loudly and see the humor in stressful situations.</option>
+        <option>I prefer to solve problems without violence, but I finish fights decisively.</option>
+        <option>I enjoy being out in nature; poor weather never sours my mood.</option>
+        <option>I am dependable.</option>
+        <option>I am always working on some project or other.</option>
+        <option>I become cantankerous and quiet in the rain.</option>
+        <option>When the sea is within my sight, my mood is jovial and optimistic.</option>
         `
         personality.setAttribute('list', 'MarinePList')
       idealsDatalist.setAttribute('id', 'MarineIList')
         idealsDatalist.innerHTML = `
-        <option></option>
+        <option>Teamwork. Success depends on cooperation and communication. (Good)</option>
+        <option>Code. The marines' code provides a solution for every problem, and following it is imperative. (Lawful)</option>
+        <option>Embracing. Life is messy. Throwing yourself into the worst of it is necessary to get the job done. (Chaotic)</option>
+        <option>Might. The strong train so that they might rule those who are weak. (Evil)</option>
+        <option>Bravery. To act when others quake in fear- this is the essence of the warrior. (Any)</option>
+        <option>Perseverance. No injury or obstacle can turn me from my goal. (Any)</option>
         `
         ideals.setAttribute('list', 'MarineIList')
       bondsDatalist.setAttribute('id', 'MarineBList')
         bondsDatalist.innerHTML = `
-        <option></option>
+        <option>I face danger and evil to offset an unredeemable act in my past.</option>
+        <option>I. Will. Finish. The. Job.</option>
+        <option>I must set an example of hope for those who have given up.</option>
+        <option>I'm searching for a fellow marine captured by an elusive enemy.</option>
+        <option>Fear leads to tyranny, and both must be eradicated.</option>
+        <option>My commander betrayed my unit, and I will have revenge.</option>
         `
         bonds.setAttribute('list', 'MarineBList')
       flawsDatalist.setAttribute('id', 'MarineFList')
         flawsDatalist.innerHTML = `
-        <option></option>
+        <option>I grow combative and unpredictable when I drink.</option>
+        <option>I find civilian life difficult and struggle to say the right thing in social situations.</option>
+        <option>My intensity can drive others away.</option>
+        <option>I hold grudges and have difficulty forgiving others.</option>
+        <option>I become irrational when innocent people are hurt.</option>
+        <option>I sometimes stay up all night listening to the ghosts of my fallen enemies.</option>
         `
         flaws.setAttribute('list', 'MarineFList')
         break;
       case 'Noble':
       personalityDatalist.setAttribute('id', 'NoblePList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the world.</option>
+        <option>The common folk love me for my kindness and generosity.</option>
+        <option>No one could doubt by looking at my regal bearing that I am a cut above the unwashed masses.</option>
+        <option>I take great pains to always look my best and follow the latest fashions.</option>
+        <option>I don't like to get my hands dirty, and I won't be caught dead in unsuitable accommodations.</option>
+        <option>Despite my noble birth, I do not place myself above other folk. We all have the same blood.</option>
+        <option>My favor, once lost, is lost forever.</option>
+        <option>If you do me an injury, I will crush you, ruin your name, and salt your fields.</option>
         `
         personality.setAttribute('list', 'NoblePList')
       idealsDatalist.setAttribute('id', 'NobleIList')
         idealsDatalist.innerHTML = `
-        <option></option>
+        <option>Respect. Respect is due to me because of my position, but all people regardless of station deserve to be treated with dignity. (Good)</option>
+        <option>Responsibility. It is my duty to respect the authority of those above me, just as those below me must respect mine. (Lawful)</option>
+        <option>Independence. I must prove that I can handle myself without the coddling of my family. (Chaotic)</option>
+        <option>Power. If I can attain more power, no one will tell me what to do. (Evil)</option>
+        <option>Family. Blood runs thicker than water. (Any)</option>
+        <option>Noble Obligation. It is my duty to protect and care for the people beneath me. (Good)</option>
         `
         ideals.setAttribute('list', 'NobleIList')
       bondsDatalist.setAttribute('id', 'NobleBList')
         bondsDatalist.innerHTML = `
-        <option></option>
+        <option>I will face any challenge to win the approval of my family.</option>
+        <option>My house's alliance with another noble family must be sustained at all costs.</option>
+        <option>Nothing is more important than the other members of my family.</option>
+        <option>I am in love with the heir of a family that my family despises.</option>
+        <option>My loyalty to my sovereign is unwavering.</option>
+        <option>The common folk must see me as a hero of the people.</option>
         `
         bonds.setAttribute('list', 'NobleBList')
       flawsDatalist.setAttribute('id', 'NobleFList')
         flawsDatalist.innerHTML = `
-        <option></option>
+        <option>I secretly believe that everyone is beneath me.</option>
+        <option>I hide a truly scandalous secret that could ruin my family forever.</option>
+        <option>I too often hear veiled insults and threats in every word addressed to me, and I'm quick to anger.</option>
+        <option>I have an insatiable desire for carnal pleasures.</option>
+        <option>In fact, the world does revolve around me.</option>
+        <option>By my words and actions, I often bring shame to my family.</option>
         `
         flaws.setAttribute('list', 'NobleFList')
         break;
       case 'Outlander':
       personalityDatalist.setAttribute('id', 'OutlanderPList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>I'm driven by a wanderlust that led me away from home.</option>
+        <option>I watch over my friends as if they were a litter of newborn pups.</option>
+        <option>I once ran twenty-five miles without stopping to warn my clan of an approaching orc horde. I'd do it again if I had to.</option>
+        <option>I have a lesson for every situation, drawn from observing nature.</option>
+        <option>I place no stock in wealthy or well-mannered folk. Money and manners won't save you from a hungry owlbear.</option>
+        <option>I'm always picking things up, absently fiddling with them, and sometimes accidentally breaking them.</option>
+        <option>I feel far more comfortable around animals than people.</option>
+        <option>I was, in fact, raised by wolves.</option>
         `
         personality.setAttribute('list', 'OutlanderPList')
       idealsDatalist.setAttribute('id', 'OutlanderIList')
         idealsDatalist.innerHTML = `
-        <option></option>
+        <option>Change. Life is like the seasons, in constant change, and we must change with it. (Chaotic)</option>
+        <option>Greater Good. It is each person's responsibility to make the most happiness for the whole tribe. (Good)</option>
+        <option>Honor. If I dishonor myself, I dishonor my whole clan. (Lawful)</option>
+        <option>Might. The strongest are meant to rule. (Evil)</option>
+        <option>Nature. The natural world is more important than all the constructs of civilization. (Neutral)</option>
+        <option>Glory. I must earn glory in battle, for myself and my clan. (Any)</option>
         `
         ideals.setAttribute('list', 'OutlanderIList')
       bondsDatalist.setAttribute('id', 'OutlanderBList')
         bondsDatalist.innerHTML = `
-        <option></option>
+        <option>My family, clan, or tribe is the most important thing in my life, even when they are far from me.</option>
+        <option>An injury to the unspoiled wilderness of my home is an injury to me.</option>
+        <option>I will bring terrible wrath down on the evildoers who destroyed my homeland.</option>
+        <option>I am the last of my tribe, and it is up to me to ensure their names enter legend.</option>
+        <option>I suffer awful visions of a coming disaster and will do anything to prevent it.</option>
+        <option>It is my duty to provide children to sustain my tribe.</option>
         `
         bonds.setAttribute('list', 'OutlanderBList')
       flawsDatalist.setAttribute('id', 'OutlanderFList')
         flawsDatalist.innerHTML = `
-        <option></option>
+        <option>I am too enamored of ale, wine, and other intoxicants.</option>
+        <option>There's no room for caution in a life lived to the fullest.</option>
+        <option>I remember every insult I've received and nurse a silent resentment toward anyone who's ever wronged me.</option>
+        <option>I am slow to trust members of other races, tribes, and societies.</option>
+        <option>Violence is my answer to almost any challenge.</option>
+        <option>Don't expect me to save those who can't save themselves. It is nature's way that the strong thrive and the weak perish.</option>
         `
         flaws.setAttribute('list', 'OutlanderFList')
         break;
       case 'Pirate':
       personalityDatalist.setAttribute('id', 'PiratePList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>My friends know they can rely on me, no matter what.</option>
+        <option>I work hard so that I can play hard when the work is done.</option>
+        <option>I enjoy sailing into new ports and making new friends over a flagon of ale.</option>
+        <option>I stretch the truth for the sake of a good story.</option>
+        <option>To me, a tavern brawl is a nice way to get to know a new city.</option>
+        <option>I never pass up a friendly wager.</option>
+        <option>My language is as foul as an otyugh nest.</option>
+        <option>I like a job well done, especially if I can convince someone else to do it.</option>
         `
         personality.setAttribute('list', 'PiratePList')
       idealsDatalist.setAttribute('id', 'PirateIList')
         idealsDatalist.innerHTML = `
-        <option></option>
+        <option>Respect. The thing that keeps a ship together is mutual respect between captain and crew. (Good)</option>
+        <option>Fairness. We all do the work, so we all share in the rewards. (Lawful)</option>
+        <option>Freedom. The sea is freedom-the freedom to go anywhere and do anything. (Chaotic)</option>
+        <option>Mastery. I'm a predator, and the other ships on the sea are my prey. (Evil)</option>
+        <option>People. I'm committed to my crewmates, not to ideals. (Neutral)</option>
+        <option>Aspiration. Someday I'll own my own ship and chart my own destiny. (Any)</option>
         `
         ideals.setAttribute('list', 'PirateIList')
       bondsDatalist.setAttribute('id', 'PirateBList')
         bondsDatalist.innerHTML = `
-        <option></option>
+        <option>I'm loyal to my captain first, everything else second.</option>
+        <option>The ship is most important - crewmates and captains come and go.</option>
+        <option>I'll always remember my first ship.</option>
+        <option>In a harbor town, I have a paramour whose eyes nearly stole me from the sea.</option>
+        <option>I was cheated out of my fair share of the profits, and I want to get my due.</option>
+        <option>Ruthless pirates murdered my captain and crewmates, plundered our ship, and left me to die. Vengeance will be mine.</option>
         `
         bonds.setAttribute('list', 'PirateBList')
       flawsDatalist.setAttribute('id', 'PirateFList')
         flawsDatalist.innerHTML = `
-        <option></option>
+        <option>I follow orders, even if I think they're wrong.</option>
+        <option>I'll say anything to avoid having to do extra work.</option>
+        <option>Once someone questions my courage, I never back down no matter how dangerous the situation.</option>
+        <option>Once I start drinking, it's hard for me to stop.</option>
+        <option>I can't help but pocket loose coins and other trinkets I come across.</option>
+        <option>My pride will probably lead to my destruction.</option>
         `
         flaws.setAttribute('list', 'PirateFList')
         break;
       case 'Rewarded':
       personalityDatalist.setAttribute('id', 'RewardedPList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>A safe home is a foundation on which anything else can be built. (Key, Throne)</option>
+        <option>I was elevated to heights I could never otherwise attain, and I won’t waste my fortune. (Star, Sun)</option>
+        <option>I try to be a source of inspiration and joy to others. Life is never as bad as you think! (Euryale, Jester)</option>
+        <option>Courage and boldness can carry the day when all else fails. (Comet, Knight)</option>
+        <option>My good fortune means I can lift others up as well. (Gem, Moon)</option>
+        <option>Having the right answers is the first step to solving any problem, no matter how dire. (Fates, Sage)</option>
         `
         personality.setAttribute('list', 'RewardedPList')
-      idealsDatalist.setAttribute('id', 'RewardedIList')
-        idealsDatalist.innerHTML = `
-        <option></option>
-        `
-        ideals.setAttribute('list', 'RewardedIList')
-      bondsDatalist.setAttribute('id', 'RewardedBList')
-        bondsDatalist.innerHTML = `
-        <option></option>
-        `
-        bonds.setAttribute('list', 'RewardedBList')
-      flawsDatalist.setAttribute('id', 'RewardedFList')
-        flawsDatalist.innerHTML = `
-        <option></option>
-        `
-        flaws.setAttribute('list', 'RewardedFList')
         break;
       case 'Ruined':
       personalityDatalist.setAttribute('id', 'RuinedPList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>I’ve changed from my past, and I work to live up to my new path. (Balance, Throne)</option>
+        <option>Every moment is a gift I refuse to squander. (Euryale, Skull)</option>
+        <option>Now that I’ve overcome having nothing, I can survive anything. (Fool, Ruin, Talons)</option>
+        <option>I know enemies are set against me, and I always prepare for the worst. (Flames, Rogue)</option>
+        <option>I interpret every event as part of a larger pattern I just haven’t worked out yet. (Puzzle, Star)</option>
+        <option>I must make up for so much time I’ve already lost. (Donjon, Void)</option>
         `
         personality.setAttribute('list', 'RuinedPList')
-      idealsDatalist.setAttribute('id', 'RuinedIList')
-        idealsDatalist.innerHTML = `
-        <option></option>
-        `
-        ideals.setAttribute('list', 'RuinedIList')
-      bondsDatalist.setAttribute('id', 'RuinedBList')
-        bondsDatalist.innerHTML = `
-        <option></option>
-        `
-        bonds.setAttribute('list', 'RuinedBList')
-      flawsDatalist.setAttribute('id', 'RuinedFList')
-        flawsDatalist.innerHTML = `
-        <option></option>
-        `
-        flaws.setAttribute('list', 'RuinedFList')
         break;
       case 'Rune Carver':
       personalityDatalist.setAttribute('id', 'Rune-CarverPList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>Is it practical to learn an ancient language that is rarely spoken? No. But is it fun? Very.</option>
+        <option>I learned one of my ancestors was a lauded rune carver whose story was lost to time. I seek to rekindle that legacy.</option>
+        <option>The old, traditional markings of runecraft look so boring. Why not give my runes some flair?</option>
+        <option>In my studies of runes, I strive to understand how great civilizations of the past fell, so that I may prevent it from happening to societies of the present.</option>
+        <option>Life may be a whirlwind of chaos around me, but whenever I create my runes, I feel at peace.</option>
+        <option>My brain struggles to process ink words written on paper, but the tactile feeling of carved runes makes my mind sing.</option>
         `
         personality.setAttribute('list', 'Rune-CarverPList')
-      idealsDatalist.setAttribute('id', 'Rune-CarverIList')
-        idealsDatalist.innerHTML = `
-        <option></option>
-        `
-        ideals.setAttribute('list', 'Rune-CarverIList')
-      bondsDatalist.setAttribute('id', 'Rune-CarverBList')
-        bondsDatalist.innerHTML = `
-        <option></option>
-        `
-        bonds.setAttribute('list', 'Rune-CarverBList')
-      flawsDatalist.setAttribute('id', 'Rune-CarverFList')
-        flawsDatalist.innerHTML = `
-        <option></option>
-        `
-        flaws.setAttribute('list', 'Rune-CarverFList')
         break;
       case 'Sage':
       personalityDatalist.setAttribute('id', 'SagePList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>I use polysyllabic words that convey the impression of great erudition.</option>
+        <option>I've read every book in the world's greatest libraries – or I like to boast that I have.</option>
+        <option>I'm used to helping out those who aren't as smart as I am, and I patiently explain anything and everything to others.</option>
+        <option>There's nothing I like more than a good mystery.</option>
+        <option>I'm willing to listen to every side of an argument before I make my own judgment.</option>
+        <option>I… speak… slowly… when talking… to idiots,… which… almost… everyone… is… compared… to me.</option>
+        <option>I am horribly, horribly awkward in social situations.</option>
+        <option>I'm convinced that people are always trying to steal my secrets.</option>
         `
         personality.setAttribute('list', 'SagePList')
       idealsDatalist.setAttribute('id', 'SageIList')
         idealsDatalist.innerHTML = `
-        <option></option>
+        <option>Knowledge. The path to power and self-improvement is through knowledge. (Neutral)</option>
+        <option>Beauty. What is beautiful points us beyond itself toward what is true. (Good)</option>
+        <option>Logic. Emotions must not cloud our logical thinking. (Lawful)</option>
+        <option>No Limits. Nothing should fetter the infinite possibility inherent in all existence. (Chaotic)</option>
+        <option>Power. Knowledge is the path to power and domination. (Evil)</option>
+        <option>Self-Improvement. The goal of a life of study is the betterment of oneself. (Any)</option>
         `
         ideals.setAttribute('list', 'SageIList')
       bondsDatalist.setAttribute('id', 'SageBList')
         bondsDatalist.innerHTML = `
-        <option></option>
+        <option>It is my duty to protect my students.</option>
+        <option>I have an ancient text that holds terrible secrets that must not fall into the wrong hands.</option>
+        <option>I work to preserve a library, university, scriptorium, or monastery.</option>
+        <option>My life's work is a series of tomes related to a specific field of lore.</option>
+        <option>I've been searching my whole life for the answer to a certain question.</option>
+        <option>I sold my soul for knowledge. I hope to do great deeds and win it back.</option>
         `
         bonds.setAttribute('list', 'SageBList')
       flawsDatalist.setAttribute('id', 'SageFList')
         flawsDatalist.innerHTML = `
-        <option></option>
+        <option>I am easily distracted by the promise of information.</option>
+        <option>Most people scream and run when they see a demon. I stop and take notes on its anatomy.</option>
+        <option>Unlocking an ancient mystery is worth the price of a civilization.</option>
+        <option>I overlook obvious solutions in favor of complicated ones.</option>
+        <option>I speak without really thinking through my words, invariably insulting others.</option>
+        <option>I can't keep a secret to save my life, or anyone else's.</option>
         `
         flaws.setAttribute('list', 'SageFList')
         break;
       case 'Sailor':
       personalityDatalist.setAttribute('id', 'SailorPList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>My friends know they can rely on me, no matter what.</option>
+        <option>I work hard so that I can play hard when the work is done.</option>
+        <option>I enjoy sailing into new ports and making new friends over a flagon of ale.</option>
+        <option>I stretch the truth for the sake of a good story.</option>
+        <option>To me, a tavern brawl is a nice way to get to know a new city.</option>
+        <option>I never pass up a friendly wager.</option>
+        <option>My language is as foul as an otyugh nest.</option>
+        <option>I like a job well done, especially if I can convince someone else to do it.</option>
         `
         personality.setAttribute('list', 'SailorPList')
       idealsDatalist.setAttribute('id', 'SailorIList')
         idealsDatalist.innerHTML = `
-        <option></option>
+        <option>Respect. The thing that keeps a ship together is mutual respect between captain and crew. (Good)</option>
+        <option>Fairness. We all do the work, so we all share in the rewards. (Lawful)</option>
+        <option>Freedom. The sea is freedom-the freedom to go anywhere and do anything. (Chaotic)</option>
+        <option>Mastery. I'm a predator, and the other ships on the sea are my prey. (Evil)</option>
+        <option>People. I'm committed to my crewmates, not to ideals. (Neutral)</option>
+        <option>Aspiration. Someday I'll own my own ship and chart my own destiny. (Any)</option>
         `
         ideals.setAttribute('list', 'SailorIList')
       bondsDatalist.setAttribute('id', 'SailorBList')
         bondsDatalist.innerHTML = `
-        <option></option>
+        <option>I'm loyal to my captain first, everything else second.</option>
+        <option>The ship is most important - crewmates and captains come and go.</option>
+        <option>I'll always remember my first ship.</option>
+        <option>In a harbor town, I have a paramour whose eyes nearly stole me from the sea.</option>
+        <option>I was cheated out of my fair share of the profits, and I want to get my due.</option>
+        <option>Ruthless pirates murdered my captain and crewmates, plundered our ship, and left me to die. Vengeance will be mine.</option>
         `
         bonds.setAttribute('list', 'SailorBList')
       flawsDatalist.setAttribute('id', 'SailorFList')
         flawsDatalist.innerHTML = `
-        <option></option>
+        <option>I follow orders, even if I think they're wrong.</option>
+        <option>I'll say anything to avoid having to do extra work.</option>
+        <option>Once someone questions my courage, I never back down no matter how dangerous the situation.</option>
+        <option>Once I start drinking, it's hard for me to stop.</option>
+        <option>I can't help but pocket loose coins and other trinkets I come across.</option>
+        <option>My pride will probably lead to my destruction.</option>
         `
         flaws.setAttribute('list', 'SailorFList')
         break;
       case 'Shipwright':
       personalityDatalist.setAttribute('id', 'ShipwrightPList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>I love talking and being heard more than I like to listen.</option>
+        <option>I'm extremely fond of puzzles.</option>
+        <option>I thrive under pressure.</option>
+        <option>I love sketching and designing objects, especially boats.</option>
+        <option>I'm not afraid of hard work—in fact, I prefer it.</option>
+        <option>A pipe, an ale, and the smell of the sea: paradise.</option>
+        <option>I have an endless supply of cautionary tales related to the sea.</option>
+        <option>I don't mind getting my hands dirty.</option>
         `
         personality.setAttribute('list', 'ShipwrightPList')
       idealsDatalist.setAttribute('id', 'ShipwrightIList')
         idealsDatalist.innerHTML = `
-        <option></option>
+        <option>Crew. If everyone on deck pitches in, we'll never sink. (Good)</option>
+        <option>Careful Lines. A ship must be balanced according to the laws of the universe. (Lawful)</option>
+        <option>Invention. Make what you need out of whatever is at hand. (Chaotic)</option>
+        <option>Perfection. To measure a being and find it lacking is the greatest disappointment. (Evil)</option>
+        <option>Reflection. Muddied water always clears in time. (Any)</option>
+        <option>Hope. The horizon at sea holds the greatest promise. (Any)</option>
         `
         ideals.setAttribute('list', 'ShipwrightIList')
       bondsDatalist.setAttribute('id', 'ShipwrightBList')
         bondsDatalist.innerHTML = `
-        <option></option>
+        <option>I must visit all the oceans of the world and behold the ships that sail there.</option>
+        <option>Much of the treasure I claim will be used to enrich my community.</option>
+        <option>I must find a kind of wood rumored to possess magical qualities.</option>
+        <option>I repair broken things to redeem what's broken in myself.</option>
+        <option>I will craft a boat capable of sailing through the most dangerous of storms.</option>
+        <option>A kraken destroyed my masterpiece; its teeth shall adorn my hearth.</option>
         `
         bonds.setAttribute('list', 'ShipwrightBList')
       flawsDatalist.setAttribute('id', 'ShipwrightFList')
         flawsDatalist.innerHTML = `
-        <option></option>
+        <option>I don't know when to throw something away. You never know when it might be useful again.</option>
+        <option>I get frustrated to the point of distraction by shoddy craftsmanship.</option>
+        <option>Though I am an excellent crafter, my work tends to look as though it belongs on a ship.</option>
+        <option>I am so obsessed with sketching my ideas for elaborate inventions that I sometimes forget little thing like eating and sleeping.</option>
+        <option>I'm judgmental of those who are not skilled with tools of some kind.</option>
+        <option>I sometimes take things that don't belong to me, especially if they are very well made.</option>
         `
         flaws.setAttribute('list', 'ShipwrightFList')
         break;
       case 'Smuggler':
       personalityDatalist.setAttribute('id', 'SmugglerPList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>I love being on the water but hate fishing.</option>
+        <option>I think of everything in terms of monetary value.</option>
+        <option>I never stop smiling.</option>
+        <option>Nothing rattles me; I have a lie for every occasion.</option>
+        <option>I love gold but won't cheat a friend.</option>
+        <option>I enjoy doing things others believe to be impossible.</option>
+        <option>I become wistful when I see the sun rise over the ocean.</option>
+        <option>I am no common criminal; I am a mastermind.</option>
         `
         personality.setAttribute('list', 'SmugglerPList')
       idealsDatalist.setAttribute('id', 'SmugglerIList')
         idealsDatalist.innerHTML = `
-        <option></option>
+        <option>Wealth Heaps of coins in a secure vault is all I dream of. (Any)</option>
+        <option>Smuggler's Code I uphold the unwritten rules of the smugglers, who do not cheat one another or directly harm innocents. (Lawful)</option>
+        <option>All for a Coin I'll do nearly anything if it means I turn a profit. (Evil)</option>
+        <option>Peace and Prosperity I smuggle only to achieve a greater goal that benefits my community. (Good)</option>
+        <option>People For all my many lies, I place a high value on friendship. (Any)</option>
+        <option>Daring I am most happy when risking everything. (Any)</option>
         `
         ideals.setAttribute('list', 'SmugglerIList')
       bondsDatalist.setAttribute('id', 'SmugglerBList')
         bondsDatalist.innerHTML = `
-        <option></option>
+        <option>My vessel was stolen from me, and I burn with the desire to recover it.</option>
+        <option>I intend to become the leader of the network of smugglers that I belong to.</option>
+        <option>I owe a debt that cannot be repaid in gold.</option>
+        <option>After one last job, I will retire from the business.</option>
+        <option>I was tricked by a fellow smuggler who stole something precious from me. I will find that thief.</option>
+        <option>I give most of my profits to a charitable cause, and I don't like to brag about it.</option>
         `
         bonds.setAttribute('list', 'SmugglerBList')
       flawsDatalist.setAttribute('id', 'SmugglerFList')
         flawsDatalist.innerHTML = `
-        <option></option>
+        <option>Lying is reflexive, and I sometimes engage in it without realizing.</option>
+        <option>I tend to assess my relationships in terms of profit and loss.</option>
+        <option>I believe everyone has a price and am cynical toward those who present themselves as virtuous.</option>
+        <option>I struggle to trust the words of others.</option>
+        <option>Few people know the real me.</option>
+        <option>Though I act charming, I feel nothing for others and don't know what friendship is.</option>
         `
         flaws.setAttribute('list', 'SmugglerFList')
         break;
       case 'Soldier':
       personalityDatalist.setAttribute('id', 'SoldierPList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>I'm always polite and respectful.</option>
+        <option>I'm haunted by memories of war. I can't get the images of violence out of my mind.</option>
+        <option>I've lost too many friends, and I'm slow to make new ones.</option>
+        <option>I'm full of inspiring and cautionary tales from my military experience relevant to almost every combat situation.</option>
+        <option>I can stare down a hell hound without flinching.</option>
+        <option>I enjoy being strong and like breaking things.</option>
+        <option>I have a crude sense of humor.</option>
+        <option>I face problems head-on. A simple, direct solution is the best path to success.</option>
         `
         personality.setAttribute('list', 'SoldierPList')
       idealsDatalist.setAttribute('id', 'SoldierIList')
         idealsDatalist.innerHTML = `
-        <option></option>
+        <option>Greater Good. Our lot is to lay down our lives in defense of others. (Good)</option>
+        <option>Responsibility. I do what I must and obey just authority. (Lawful)</option>
+        <option>Independence. When people follow orders blindly, they embrace a kind of tyranny. (Chaotic)</option>
+        <option>Might. In life as in war, the stronger force wins. (Evil)</option>
+        <option>Live and Let Live. Ideals aren't worth killing over or going to war for. (Neutral)</option>
+        <option>Nation. My city, nation, or people are all that matter. (Any)</option>
         `
         ideals.setAttribute('list', 'SoldierIList')
       bondsDatalist.setAttribute('id', 'SoldierBList')
         bondsDatalist.innerHTML = `
-        <option></option>
+        <option>I would still lay down my life for the people I served with.</option>
+        <option>Someone saved my life on the battlefield. To this day, I will never leave a friend behind.</option>
+        <option>My honor is my life.</option>
+        <option>I'll never forget the crushing defeat my company suffered or the enemies who dealt it.</option>
+        <option>Those who fight beside me are those worth dying for.</option>
+        <option>I fight for those who cannot fight for themselves.</option>
         `
         bonds.setAttribute('list', 'SoldierBList')
       flawsDatalist.setAttribute('id', 'SoldierFList')
         flawsDatalist.innerHTML = `
-        <option></option>
+        <option>The monstrous enemy we faced in battle still leaves me quivering with fear.</option>
+        <option>I have little respect for anyone who is not a proven warrior.</option>
+        <option>I made a terrible mistake in battle that cost many lives - and I would do anything to keep that mistake secret.</option>
+        <option>My hatred of my enemies is blind and unreasoning.</option>
+        <option>I obey the law, even if the law causes misery.</option>
+        <option>I'd rather eat my armor than admit when I'm wrong.</option>
         `
         flaws.setAttribute('list', 'SoldierFList')
         break;
       case 'Spy':
       personalityDatalist.setAttribute('id', 'SpyPList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>I always have a plan for what to do when things go wrong.</option>
+        <option>I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.</option>
+        <option>The first thing I do in a new place is note the locations of everything valuable – or where such things could be hidden.</option>
+        <option>I would rather make a new friend than a new enemy.</option>
+        <option>I am incredibly slow to trust. Those who seem the fairest often have the most to hide.</option>
+        <option>I don't pay attention to the risks in a situation. Never tell me the odds.</option>
+        <option>The best way to get me to do something is to tell me I can't do it.</option>
+        <option>I blow up at the slightest insult.</option>
         `
         personality.setAttribute('list', 'SpyPList')
       idealsDatalist.setAttribute('id', 'SpyIList')
         idealsDatalist.innerHTML = `
-        <option></option>
+        <option>Honor. I don't steal from others in the trade. (Lawful)</option>
+        <option>Freedom. Chains are meant to be broken, as are those who would forge them. (Chaotic)</option>
+        <option>Charity. I steal from the wealthy so that I can help people in need. (Good)</option>
+        <option>Greed. I will do whatever it takes to become wealthy. (Evil)</option>
+        <option>People. I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)</option>
+        <option>Redemption. There's a spark of good in everyone. (Good)</option>
         `
         ideals.setAttribute('list', 'SpyIList')
       bondsDatalist.setAttribute('id', 'SpyBList')
         bondsDatalist.innerHTML = `
-        <option></option>
+        <option>I'm trying to pay off an old debt I owe to a generous benefactor.</option>
+        <option>My ill-gotten gains go to support my family.</option>
+        <option>Something important was taken from me, and I aim to steal it back.</option>
+        <option>I will become the greatest thief that ever lived.</option>
+        <option>I'm guilty of a terrible crime. I hope I can redeem myself for it.</option>
+        <option>Someone I loved died because of I mistake I made. That will never happen again.</option>
         `
         bonds.setAttribute('list', 'SpyBList')
       flawsDatalist.setAttribute('id', 'SpyFList')
         flawsDatalist.innerHTML = `
-        <option></option>
+        <option>When I see something valuable, I can't think about anything but how to steal it.</option>
+        <option>When faced with a choice between money and my friends, I usually choose the money.</option>
+        <option>If there's a plan, I'll forget it. If I don't forget it, I'll ignore it.</option>
+        <option>I have a "tell" that reveals when I'm lying.</option>
+        <option>I turn tail and run when things look bad.</option>
+        <option>An innocent person is in prison for a crime that I committed. I'm okay with that.</option>
         `
         flaws.setAttribute('list', 'SpyFList')
         break;
       case 'Urchin':
       personalityDatalist.setAttribute('id', 'UrchinPList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>I hide scraps of food and trinkets away in my pockets.</option>
+        <option>I ask a lot of questions.</option>
+        <option>I like to squeeze into small places where no one else can get to me.</option>
+        <option>I sleep with my back to a wall or tree, with everything I own wrapped in a bundle in my arms.</option>
+        <option>I eat like a pig and have bad manners.</option>
+        <option>I think anyone who's nice to me is hiding evil intent.</option>
+        <option>I don't like to bathe.</option>
+        <option>I bluntly say what other people are hinting at or hiding.</option>
         `
         personality.setAttribute('list', 'UrchinPList')
       idealsDatalist.setAttribute('id', 'UrchinIList')
         idealsDatalist.innerHTML = `
-        <option></option>
+        <option>Respect. All people, rich or poor, deserve respect. (Good)</option>
+        <option>Community. We have to take care of each other, because no one else is going to do it. (Lawful)</option>
+        <option>Change. The low are lifted up, and the high and mighty are brought down. Change is the nature of things. (Chaotic)</option>
+        <option>Retribution. The rich need to be shown what life and death are like in the gutters. (Evil)</option>
+        <option>People. I help the people who help me-that's what keeps us alive. (Neutral)</option>
+        <option>Aspiration. I'm going to prove that I'm worthy of a better life. (Any)</option>
         `
         ideals.setAttribute('list', 'UrchinIList')
       bondsDatalist.setAttribute('id', 'UrchinBList')
         bondsDatalist.innerHTML = `
-        <option></option>
+        <option>My town or city is my home, and I'll fight to defend it.</option>
+        <option>I sponsor an orphanage to keep others from enduring what I was forced to endure.</option>
+        <option>I owe my survival to another urchin who taught me to live on the streets.</option>
+        <option>I owe a debt I can never repay to the person who took pity on me.</option>
+        <option>I escaped my life of poverty by robbing an important person, and I'm wanted for it.</option>
+        <option>No one else should have to endure the hardships I've been through.</option>
         `
         bonds.setAttribute('list', 'UrchinBList')
       flawsDatalist.setAttribute('id', 'UrchinFList')
         flawsDatalist.innerHTML = `
-        <option></option>
+        <option>If I'm outnumbered, I will run away from a fight.</option>
+        <option>Gold seems like a lot of money to me, and I'll do just about anything for more of it.</option>
+        <option>I will never fully trust anyone other than myself.</option>
+        <option>I'd rather kill someone in their sleep then fight fair.</option>
+        <option>It's not stealing if I need it more than someone else.</option>
+        <option>People who can't take care of themselves get what they deserve.</option>
         `
         flaws.setAttribute('list', 'UrchinFList')
         break;
       case 'Witchlight Hand':
       personalityDatalist.setAttribute('id', 'Witchlight-HandPList')
         personalityDatalist.innerHTML = `
-        <option></option>
+        <option>I'm haunted by fey laughter that only I can hear, though I know it's just my mind playing tricks on me.</option>
+        <option>Like a nomad, I can't settle down in one place for very long.</option>
+        <option>Good music makes me weep like a baby.</option>
+        <option>Wherever I go, I try to bring a little of the warmth and tranquility of home with me.</option>
+        <option>I have never lost my childlike sense of wonder.</option>
+        <option>When I have a new idea, I get wildly excited about it until I come up with another, better idea.</option>
+        <option>I live by my own set of weird and wonderful rules.</option>
+        <option>I can't bring myself to trust most adults.</option>
         `
         personality.setAttribute('list', 'Witchlight-HandPList')
       idealsDatalist.setAttribute('id', 'Witchlight-HandIList')
         idealsDatalist.innerHTML = `
-        <option></option>
+        <option>Friendship. I never leave a friend behind. (Good)</option>
+        <option>Empathy. No creature should be made to suffer. (Good)</option>
+        <option>Wanderlust. I prefer to take the less traveled path. (Chaotic)</option>
+        <option>Changeability. Change is good, which is why I live by an ever-changing set of rules. (Chaotic)</option>
+        <option>Honor. A deal is a deal, and I would never break one. (Lawful)</option>
+        <option>Rule of Three. Everything in the multiverse happens in threes. I see the "rule of three" everywhere. (Lawful)</option>
+        <option>Obsession. I won't let go of a grudge. (Evil)</option>
+        <option>Greed. I will do whatever it takes to get what I want, regardless of the harm it might cause. (Evil)</option>
         `
         ideals.setAttribute('list', 'Witchlight-HandIList')
       bondsDatalist.setAttribute('id', 'Witchlight-HandBList')
         bondsDatalist.innerHTML = `
-        <option></option>
+        <option>I would never break my word.</option>
+        <option>I find magic in all its forms to be compelling. The more magical a place, the more I am drawn to it.</option>
+        <option>I do what I can to protect the natural world.</option>
+        <option>A trusted friend is the most important thing in the multiverse to me.</option>
+        <option>I can't bring myself to harm a Fey creature, either because I consider myself one or because I fear the repercussions.</option>
+        <option>The Witchlight Carnival feels like home to me.</option>
+        <option>I'm drawn to the Feywild and long to return there, if only for a short while.</option>
+        <option>I feel indebted to Mister Witch and Mister Light for giving me a home and a purpose.</option>
         `
         bonds.setAttribute('list', 'Witchlight-HandBList')
       flawsDatalist.setAttribute('id', 'Witchlight-HandFList')
         flawsDatalist.innerHTML = `
-        <option></option>
+        <option>I easily lose track of time. My poor sense of time means I'm always late.</option>
+        <option>I think the whole multiverse is out to get me.</option>
+        <option>I'm always operating under a tight timeline, and I'm obsessed with keeping everything on schedule.</option>
+        <option>I'm a kleptomaniac who covets shiny, sparkling treasure.</option>
+        <option>I'm forgetful. Sometimes I can't remember even the simplest things.</option>
+        <option>I never give away anything for free and always expect something in return.</option>
+        <option>I have many vices and tend to indulge them.</option>
+        <option>I'm always changing my mind-well, almost always.</option>
         `
         flaws.setAttribute('list', 'Witchlight-HandFList')
         break;
