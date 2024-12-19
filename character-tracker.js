@@ -1,3 +1,6 @@
+import jobs from "./storymastersclasses.mjs";
+import species from "./storymastersspecies.mjs";
+import backgrounds from "./storymastersbackgrounds.mjs";
 let characters = [];
 let n = 0;
 
@@ -493,41 +496,81 @@ function addNewCharacter()
         sj.setAttribute('list', 'PaladinList')
         break;
       case 'Ranger':
-        sjDatalist.setAttribute('id', 'HumanList')
+        sjDatalist.setAttribute('id', 'RangerList')
         sjDatalist.innerHTML = `
-        <option>Base Human</option>
-        <option>Varient Human</option>
+        <option>Beast Master</option>
+        <option>Drakewarden</option>
+        <option>Fey Wanderer</option>
+        <option>Gloom Stalker</option>
+        <option>Horizon Walker</option>
+        <option>Hunter Ranger</option>
+        <option>Monster Slayer</option>
+        <option>Swarmkeeper</option>
         `
-        sj.setAttribute('list', 'HumanList')
+        sj.setAttribute('list', 'RangerList')
         break;
-      case 'Shifter':
-        sjDatalist.setAttribute('id', 'ShifterList')
+      case 'Rogue':
+        sjDatalist.setAttribute('id', 'RogueList')
         sjDatalist.innerHTML = `
-        <option>Beasthide Shifter</option>
-        <option>Longtooth Shifter</option>
-        <option>Swiftstride Shifter</option>
-        <option>Wildhunt Shifter</option>
+        <option>Arcane Trickster</option>
+        <option>Assassin</option>
+        <option>Inquisitive</option>
+        <option>Mastermind</option>
+        <option>Phantom</option>
+        <option>Scout</option>
+        <option>Soulknife</option>
+        <option>Swashbuckler</option>
+        <option>Thief</option>
         `
-        sj.setAttribute('list', 'ShifterList')
+        sj.setAttribute('list', 'RogueList')
         break;
-      case 'Tiefling':
-        sjDatalist.setAttribute('id', 'TieflingList')
+      case 'Sorcerer':
+        sjDatalist.setAttribute('id', 'SorcererList')
         sjDatalist.innerHTML = `
-        <option>Asmodeus Tiefling</option>
-        <option>Baalzebul Tiefling</option>
-        <option>Devil's Tongue Tiefling</option>
-        <option>Dispater Tiefling</option>
-        <option>Feral Tiefling</option>
-        <option>Fierna Tiefling</option>
-        <option>Glasya Tiefling</option>
-        <option>Levistus Tiefling</option>
-        <option>Mammon Tiefling</option>
-        <option>Mephistopheles Tiefling</option>
-        <option>Winged Tiefling</option>
-        <option>Zariel Tiefling</option>
+        <option>Aberrant Mind</option>
+        <option>Clockwork Soul</option>
+        <option>Divine Soul</option>
+        <option>Draconic Blodline</option>
+        <option>Lunar Sorcery</option>
+        <option>Shadow Magic</option>
+        <option>Storm Sorcery</option>
+        <option>Wild Magic</option>
         `
-        sj.setAttribute('list', 'TieflingList')
+        sj.setAttribute('list', 'SorcererList')
         break;
+        case 'Warlock':
+          sjDatalist.setAttribute('id', 'WarlockList')
+          sjDatalist.innerHTML = `
+          <option>Archfey</option>
+          <option>Celestial</option>
+          <option>Fathomless</option>
+          <option>Fiend</option>
+          <option>Genie</option>
+          <option>Great Old One</option>
+          <option>Hexblade</option>
+          <option>Undead</option>
+          <option>Undying</option>
+          `
+          sj.setAttribute('list', 'WarlockList')
+          break;
+        case 'Wizard':
+          sjDatalist.setAttribute('id', 'WizardList')
+          sjDatalist.innerHTML = `
+          <option>Bladesinging</option>
+          <option>Chronurgy Magic</option>
+          <option>Graviturgy Magic</option>
+          <option>Order of Scribes</option>
+          <option>School of Abjuration</option>
+          <option>School of Divination</option>
+          <option>School of Enchantment</option>
+          <option>School of Evocation</option>
+          <option>School of Illusion</option>
+          <option>School of Necromancy</option>
+          <option>School of Transmutation</option>
+          <option>War Magic</option>
+          `
+          sj.setAttribute('list', 'WizardList')
+          break;  
       default:
         break;
     }
@@ -644,80 +687,40 @@ function addNewCharacter()
         ss.setAttribute('list', 'HalflingList')
         break;
       case 'Human':
-        ssDatalist.setAttribute('id', 'RangerList')
+        ssDatalist.setAttribute('id', 'HumanList')
         ssDatalist.innerHTML = `
-        <option>Beast Master</option>
-        <option>Drakewarden</option>
-        <option>Fey Wanderer</option>
-        <option>Gloom Stalker</option>
-        <option>Horizon Walker</option>
-        <option>Hunter Ranger</option>
-        <option>Monster Slayer</option>
-        <option>Swarmkeeper</option>
+        <option>Base Human</option>
+			  <option>Varient Human</option>
         `
-        ss.setAttribute('list', 'RangerList')
+        ss.setAttribute('list', 'HumanList')
         break;
-      case 'Rogue':
-        ssDatalist.setAttribute('id', 'RogueList')
+      case 'Shifter':
+        ssDatalist.setAttribute('id', 'ShifterList')
         ssDatalist.innerHTML = `
-        <option>Arcane Trickster</option>
-        <option>Assassin</option>
-        <option>Inquisitive</option>
-        <option>Mastermind</option>
-        <option>Phantom</option>
-        <option>Scout</option>
-        <option>Soulknife</option>
-        <option>Swashbuckler</option>
-        <option>Thief</option>
+        <option>Beasthide Shifter</option>
+        <option>Longtooth Shifter</option>
+        <option>Swiftstride Shifter</option>
+        <option>Wildhunt Shifter</option>
         `
-        ss.setAttribute('list', 'RogueList')
+        ss.setAttribute('list', 'ShifterList')
         break;
-      case 'Sorcerer':
-        ssDatalist.setAttribute('id', 'SorcererList')
+      case 'Tiefling':
+        ssDatalist.setAttribute('id', 'TieflingList')
         ssDatalist.innerHTML = `
-        <option>Aberrant Mind</option>
-        <option>Clockwork Soul</option>
-        <option>Divine Soul</option>
-        <option>Draconic Blodline</option>
-        <option>Lunar Sorcery</option>
-        <option>Shadow Magic</option>
-        <option>Storm Sorcery</option>
-        <option>Wild Magic</option>
+        <option>Asmodeus Tiefling</option>
+        <option>Baalzebul Tiefling</option>
+        <option>Devil's Tongue Tiefling</option>
+        <option>Dispater Tiefling</option>
+        <option>Feral Tiefling</option>
+        <option>Fierna Tiefling</option>
+        <option>Glasya Tiefling</option>
+        <option>Levistus Tiefling</option>
+        <option>Mammon Tiefling</option>
+        <option>Mephistopheles Tiefling</option>
+        <option>Winged Tiefling</option>
+        <option>Zariel Tiefling</option>
         `
-        ss.setAttribute('list', 'SorcererList')
-        break;
-      case 'Warlock':
-        ssDatalist.setAttribute('id', 'WarlockList')
-        ssDatalist.innerHTML = `
-        <option>Archfey</option>
-        <option>Celestial</option>
-        <option>Fathomless</option>
-        <option>Fiend</option>
-        <option>Genie</option>
-        <option>Great Old One</option>
-        <option>Hexblade</option>
-        <option>Undead</option>
-        <option>Undying</option>
-        `
-        ss.setAttribute('list', 'WarlockList')
-        break;
-      case 'Wizard':
-        ssDatalist.setAttribute('id', 'WizardList')
-        ssDatalist.innerHTML = `
-        <option>Bladesinging</option>
-        <option>Chronurgy Magic</option>
-        <option>Graviturgy Magic</option>
-        <option>Order of Scribes</option>
-        <option>School of Abjuration</option>
-        <option>School of Divination</option>
-        <option>School of Enchantment</option>
-        <option>School of Evocation</option>
-        <option>School of Illusion</option>
-        <option>School of Necromancy</option>
-        <option>School of Transmutation</option>
-        <option>War Magic</option>
-        `
-        ss.setAttribute('list', 'WizardList')
+        ss.setAttribute('list', 'TieflingList')
         break;
       default:
         break;
