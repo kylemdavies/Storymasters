@@ -230,6 +230,19 @@ h1
   padding: 25px;
   border-radius: 10px;
 }
+
+#display-curses {
+  background-color: var(--secondary-color);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+#display-curses > h2
+{
+  color: var(--accent2-color);
+  text-align: center;
+  font-size: 2em;
+}
 #display-characters > h2,
 .character-personalities > h3,
 .character-being > h3,
